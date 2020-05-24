@@ -19,7 +19,10 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//Vue.component('example', require('./components/ExampleComponent.vue').default);
+//Vue.component('mio', require('./components/miComponente.vue').default);
+Vue.component('password', require('./components/miComponente.vue').default);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,4 +32,11 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    mounted(){
+            console.log('Component mounted.')
+        }
+
 });
+
+
+require('easy-autocomplete/dist/jquery.easy-autocomplete');

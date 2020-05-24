@@ -22,10 +22,12 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        // si el usuario está logueado
+        // if the user is logged in
         if (Auth::guard($guard)->check()) :
 
-            // si es administrador lo rediriguimos a su seccion
+            return redirect()->route(Auth::user()->route());
+
+            /*// si es administrador lo rediriguimos a su seccion
             if(Auth::user()->isAdmin()):
 
                 return redirect()->route('admin');
@@ -33,7 +35,7 @@ class RedirectIfAuthenticated
            // si es un usuario normal lo rediriguimos a la vista principal
             //return redirect(RouteServiceProvider::HOME);
                 return redirect()->route('dogs.list');
-            endif;
+            endif;*/
 
         endif;
 

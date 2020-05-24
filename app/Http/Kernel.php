@@ -6,6 +6,11 @@ use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
+
+  /*  protected $middlewarePriority = [
+            \Illuminate\Session\Middleware\AuthenticateSession::class,
+            \App\Http\Middleware\RedirectIfAuthenticated::class,
+            \App\Http\Middleware\checkUserProfile::class];*/
     /**
      * The application's global HTTP middleware stack.
      *
@@ -62,6 +67,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'isAdmin' => \App\Http\Middleware\isAdmin::class,
+        'checkUserProfile' => \App\Http\Middleware\checkUserProfile::class,
     ];
 }

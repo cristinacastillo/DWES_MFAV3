@@ -19,7 +19,7 @@ class CreateDogTable extends Migration
             $table->string('name', 50);
             $table->string('breed', 80);
             $table->string('gender', 15);
-            $table->string('description',255);
+            $table->text('description');
             $table->string('photo',255);
 
             // by default the status will be 0 = not adopted

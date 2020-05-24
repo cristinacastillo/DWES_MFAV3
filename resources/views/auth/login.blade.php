@@ -2,6 +2,7 @@
 
 @section('cuerpo')
 
+
             <div class="card w-75 mt-4 mx-auto">
                 <div class="card-header">{{ __('Login') }}</div>
 

@@ -19,4 +19,26 @@ class Dog extends Model
 
     //
     public $fillable = ['name', 'birthdate', 'breed', 'gender', 'description', 'photo', 'status'];
+
+
+
+    public function adoptions(){
+
+    	return $this->belongsToMany('App\Models\Dog','Adoption','idDog','idDog')->withPivot('idAdop','dateAdop','reason')->get();
+
+    	//return $this->belongsToMany('App\Models\Dog','Adoption')->using('App\Models\Adoption')->get();
+
+    }
+
+
+    public function changeStatusDog():Dog{
+
+        $this->status = !$this->status;
+
+        return $this;
+
+    }
+
+
+    
 }

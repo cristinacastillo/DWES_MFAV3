@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use Illuminate\Support\Facades\Blade;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -24,5 +26,17 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+
+        /**
+         * create a new Blade directive to format the date
+         * European format.
+         *
+         * @param   $dta  contains the values ​​to be formatted.
+         */
+        Blade::directive('dateFormat', function ($dta) {
+            return "<?php
+                            echo \Carbon\Carbon::parse({$dta}->birthdate)->format('d-m-Y')
+                    ?>";
+        });
     }
 }

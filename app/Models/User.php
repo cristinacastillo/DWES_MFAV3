@@ -9,7 +9,11 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    const ADMIN = 1;
+    private const ADMIN = 1;
+    private const USER = 0;
+    /*USER = 0, ADMIN = 1*/
+    private const PROFILES = ['user','admin'];
+    private const ROUTES = ['dogs.list','admin'];
 
     protected $table      = 'user';
     protected $primaryKey = 'idUse';
@@ -52,7 +56,46 @@ class User extends Authenticatable
     {
 
         // llamar con el operador resolutor de ambito
-        return $this->admin == User::ADMIN;
+        return $this->profile == User::ADMIN;
+    }
+
+
+    public function adoptions(){
+
+        return $this->belongsToMany('App\Models\User','Adoption','idUse','idUse')->withPivot('idAdop','dateAdop','reason')->get();
+        //return $this->belongsToMany('App\Models\User')->using('App\Models\Adoption')->get();
+
+    }
+
+
+    public function profile(String $profile):bool{
+
+        // Buscamos un perfil u otro
+
+        if ((($profile == 'admin') and ($this->profile == User::ADMIN))) return true;
+
+        if ((($profile == 'user') and ($this->profile == User::USER))) return false;
+
+        return false;
+
+        /*********************************/
+        // array_Serche devuelve el indice en el que se encuentra el perfil. Si no se encuentra devuelve falso
+        //return $this->profile == array_search($profile, User::PROFILES);
+        //return false;
+
+    }
+
+    /**
+     * Returns the path to the indicated profile
+     * 
+     * @param 
+     * @return String
+     * 
+     */ 
+
+    public function route():String{
+
+        return User::ROUTES[$this->profile];
     }
 
 }

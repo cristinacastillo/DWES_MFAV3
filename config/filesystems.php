@@ -13,6 +13,8 @@ return [
     |
     */
 
+    // definido por defecto un sistema de archivos, se encuentra definidio en .env, si no se usa por defcto local
+
     'default' => env('FILESYSTEM_DRIVER', 'local'),
 
     /*
@@ -25,6 +27,8 @@ return [
     | will be bound as the Cloud disk implementation in the container.
     |
     */
+
+    // sistema para la nube
 
     'cloud' => env('FILESYSTEM_CLOUD', 's3'),
 

@@ -23,7 +23,7 @@ class CreateUserTable extends Migration
             $table->string('phoneNumber',9);
 
             // by default the user will be 0 = normal user
-            $table->tinyInteger('admin')->default(0) ;
+            $table->tinyInteger('profile')->default(0) ;
 
             // 
             $table->rememberToken();

@@ -1,3 +1,5 @@
+
+
 /* Font */
 		/*@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');*/
 
@@ -6,9 +8,9 @@
 			box-sizing: border-box;
 		}
 
-		html {
+		/*html {
 			background-color: #ecf9ff;
-		}
+		}*/
 
 		body {
 			color: #272727;
