@@ -6,6 +6,10 @@ use Illuminate\Support\ServiceProvider;
 
 use Illuminate\Support\Facades\Blade;
 
+use Illuminate\Support\Facades\Validator;
+
+use Illuminate\Support\Facades\Hash;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -37,6 +41,22 @@ class AppServiceProvider extends ServiceProvider
             return "<?php
                             echo \Carbon\Carbon::parse({$dta}->birthdate)->format('d-m-Y')
                     ?>";
+        });
+
+
+
+        /**
+         * Validate if user's current password is correct
+         * 
+         * 
+         */
+
+        Validator::extend('isCurrentPassword',function ($attribute, $value, $parameters, $validator){
+            $user = auth()->user();
+            if(Hash::check($value, $user->password)){
+                return true;
+            }
+            return false;
         });
     }
 }

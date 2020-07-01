@@ -36,11 +36,15 @@
     outline: inherit;
 }
 div .deleteModal {
-
     align-items: center;
     display: flex;
     justify-content: center;
     height: 100%;
     display: none;
     z-index: 10;
+}
+
+/* PROFILE USER */
+a.active {
+    background-color: rgba(5, 50, 103) !important;
 }

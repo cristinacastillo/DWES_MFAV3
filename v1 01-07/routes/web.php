@@ -22,7 +22,9 @@ use Illuminate\Support\Facades\Route;
 //HOME
 // showLoginForm: the method is already created internally with which to put this would be
 // enough to have the login form as the main one.
-Route::get('/', 'Auth\LoginController@showLoginForm')->name('home');
+//Route::get('/', 'Auth\LoginController@showLoginForm')->name('home');
+
+Route::view('/','index')->name('home');
 
 // Laravel incluye la funcion logout solo con el metodo post
 Route::get('logout','Auth\LoginController@logout')->middleware('auth')->name('logout') ;
@@ -52,6 +54,7 @@ Route::middleware(['auth'])->group(function(){
 
 	});
 
+	// ADOP
 	Route::prefix('adop')->group(function () {
 
 	    Route::get('/info', 'AdoptionController@showAdops')->name('adop.info');
@@ -66,11 +69,22 @@ Route::middleware(['auth'])->group(function(){
 
 	});
 
-});
+	// USER
+	Route::prefix('user')->group(function () {
+
+		Route::get('/profile','UserController@infoUser')->name('user.profile');
+		Route::post('/changePass','UserController@changePass')->name('user.chgpass');
+		Route::post('/deleteAccount','UserController@deleteAccount')->name('user.deleteAcc');
+
+	});
 
 	// ADMIN
 	Route::get('admin','AdminController@index' )->middleware('checkUserProfile')->name('admin') ;
 
+
+});
+
+	
 
 
 
@@ -89,4 +103,8 @@ Route::fallback(function(){
 
 
 
+
+
 Route::view('/fake','welcome')->name('fake');
+
+

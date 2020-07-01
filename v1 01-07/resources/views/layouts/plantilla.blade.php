@@ -26,21 +26,25 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
-    
-    <link rel="stylesheet" href="{{ asset('css/nav.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('css/card.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/nav.css') }}" />
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/card.css') }}" />
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/comments.css') }}">
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/modal.css') }}">
+
     <script type="text/javascript" src="{{ asset('../resources/js/functions.js') }}" async defer></script>
 
-    
+    <script type="text/javascript" src="{{ asset('../resources/js/modal.js') }}" async defer></script>
+
+
 </head>
 <body>
 
-     
+
      <nav class="navbar">
     <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fas fa-bars"></i>
@@ -68,14 +72,18 @@
       <li>
         <a href="#" class="nav-links">Contact Us</a>
       </li>
-      <li>
-        @guest
+      @guest
         {{-- el usuario no está logueado, así que no mostramos el enlace para el logout --}}
         @else
-        <a href="{{ route('logout') }}" class="nav-links">Logout<i class="fas fa-sign-out-alt"></i></a>
-        @endguest
-        
+      <li>
+        <a href="{{ route('user.profile') }}" class="nav-links">Profile<i class="fas fa-sign-out-alt"></i></a>
       </li>
+      <li>
+        <a href="{{ route('logout') }}" class="nav-links">Logout<i class="fas fa-sign-out-alt"></i></a>
+      </li>
+
+      @endguest
+
     </ul>
 
 
@@ -84,7 +92,7 @@
 
     <div class="container mt-4 mb-5">
 
-       
+
 
         <!-- cuerpo -->
         <div class="row">
