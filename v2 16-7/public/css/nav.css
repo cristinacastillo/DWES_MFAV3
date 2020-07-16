@@ -1,0 +1,22 @@
+.myNav{
+  background-color: rgb(5,50,103); ;
+}
+
+.myLi{
+  font-size: 15.5px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
+}
+
+.myI{
+  margin-left: 0.2vw
+}
+
+
+.mySpan{
+  color: white;
+}
+
+.logoNav{
+  filter: invert(0.8);

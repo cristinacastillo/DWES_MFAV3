@@ -1,0 +1,97 @@
+.iconComment {
+    width: 5%;
+}
+[id*="editable"] {
+    display: none;
+}
+/* Z-index of #mask must lower than #boxes .window */
+
+#mask {
+    position: absolute;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+}
+#boxes .window {
+    position: fixed;
+    width: 440px;
+    height: 200px;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
+}
+/* Customize your modal window here, you can add background image too */
+
+#boxes #dialog {
+    width: 375px;
+    height: 203px;
+}
+.save, .cancel, .delete {
+    background: none;
+    color: green;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+div .deleteModal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    display: none;
+    z-index: 10;
+}
+
+/* PROFILE USER */
+a.active {
+    background-color: rgba(5, 50, 103) !important;
+}
+
+.imgUser{
+    width: 18rem;
+}
+
+.cardUser{
+     width: 22rem;
+}
+
+.myBadge{
+    background-color: rgb(5, 50, 103) !important;
+    color: white;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.edit{
+    font-size:24px;
+    float: right;
+    
+}
+
+
+/* INFO USER REQUEST */
+
+.infoUserReq{
+    color: red;
+}
+
+.cardUserReq{
+     width: 100%;
+}
+
+.mediaUser{
+    background-color: white; 
+    border: 1px solid lightgrey;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.photoDogUser{
+    width: 15%;
+}
+
+.btnA{
+    float: right;
+    margin-bottom: 1vw;
+}

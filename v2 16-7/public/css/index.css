@@ -1,0 +1,20 @@
+.o {
+            background-color: rgba(162, 242, 233, 0.3);
+        }
+        
+        .c {
+            /*background-color: rgba(88, 245, 164, 0.3);*/
+        }
+        
+        .o,
+        .c {
+            border: 0.1px solid lightgrey;
+            border-radius: 10px;
+        }
+        
+        .contenedor {
+            margin-right: 8vw;
+            margin-left: 8vw;
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+        }
