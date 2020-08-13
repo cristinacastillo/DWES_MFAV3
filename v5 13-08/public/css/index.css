@@ -1,0 +1,50 @@
+.o {
+    background-color: rgba(162, 242, 233, 0.3);
+}
+
+.c {
+    background-color: rgba(88, 245, 164, 0.3);
+}
+
+.g {
+    background-color: rgba(232, 232, 232, 0.3);
+}
+
+.o,
+.c ,.g, .video{
+    border: 0.1px solid lightgrey;
+    border-radius: 10px;
+}
+
+
+
+
+.mypd{
+	font-family: 'Anton', sans-serif;
+/*font-family: 'Sriracha', cursive;
+	font-weight: bold;*/
+}
+
+
+
+.list{
+	padding-left: 15%;
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  .g{
+  	padding: vw;
+  	margin: 2vw;
+  }
+
+
+  .list{
+	padding-left: 0;
+}
+
+
+
+}
+
