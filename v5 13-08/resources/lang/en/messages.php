@@ -8,8 +8,7 @@
 		'lbgender'     => 'Gender',
 		'lbdescription'     => 'Description',
 		'lbbirthdate'      => 'Birthdate',
-		'lbnombre'	   => 'name',
-		'lbfecha'	   => 'date',
+		'lbphoto'	   => 'Photo',
 
 		// buttons
 		'btguardar'    => 'Save',

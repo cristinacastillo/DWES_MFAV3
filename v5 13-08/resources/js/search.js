@@ -20,8 +20,8 @@ $(document).ready(function(){
                   $('#aviso').hide();
                   $('#index').hide();
                   //$('#pags').hide();
-                  $('#success').show();
-                  $('#success').html( "<div class=\"alert mx-auto alert-success\" style=\"width:75%\" role=\"alert\">Se han encontrado resultados:<\/div>" );
+                  //$('#success').show();
+                  //$('#success').html( "<div class=\"alert mx-auto alert-success\" style=\"width:75%\" role=\"alert\">Se han encontrado resultados:<\/div>" );
                   $('#ajax').show();
                   $('#ajax').html( data );
                   console.log("Data: " + data);
@@ -29,7 +29,7 @@ $(document).ready(function(){
                 }else{
 
 
-                  $('#success').hide();
+                  //$('#success').hide();
                   $('#aviso').show();
                   $('#ajax').hide();
                   $('#index').hide();

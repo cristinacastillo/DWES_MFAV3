@@ -56,23 +56,25 @@
 
     <script type="text/javascript" src="{{ asset('../resources/js/search.js') }}" async defer></script>
 
+    <script type="text/javascript" src="{{ asset('../resources/js/search2.js') }}" async defer></script>
+
     <script type="text/javascript" src="{{ asset('../resources/js/form.js') }}" async defer></script>
 
 
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/table.css') }}">
-    <script type="text/javascript" src="{{ asset('../resources/js/table.js') }}" async defer></script>
+    <!--<script type="text/javascript" src="{{ asset('../resources/js/table.js') }}" async defer></script>
 
-    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">-->
+  <!--  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
     <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.0/css/boxicons.min.css">-->
 
     <!--<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
-    <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/jquery.dataTables.min.js"></script>
+    <!--<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>-->
 
 
 
@@ -100,7 +102,7 @@
           @guest
             @if (Route::has('register'))
               <li class="nav-item myLi">
-                  <a class="nav-link myA" href="{{ route('register') }}">{{ __('Register') }}</a>
+                  <a class="nav-link myA" href="{{ route('register') }}"><span class="mySpan">{{ __('Register') }}</span></a>
               </li>
             @endif
           @else
@@ -113,13 +115,15 @@
             <a class="nav-link myA" href="{{ route('home') }}" class="nav-links"><span class="mySpan">Home</span></a>
           </li>
 
-          <li class="nav-item myLi">
-            <a class="nav-link myA" href="{{ route('dogs.list') }}" class="nav-links"><span class="mySpan">Dogs</span></a>
-          </li>
+          
 
           @guest
               {{-- el usuario no está logueado, así que no mostramos el enlace para el logout --}}
               @else
+
+            <li class="nav-item myLi">
+              <a class="nav-link myA" href="{{ route('dogs.list') }}" class="nav-links"><span class="mySpan">Dogs</span></a>
+            </li>
             <li class="nav-item myLi">
               <a class="nav-link myA" href="{{ route('user.profile') }}" class="nav-links"><span class="mySpan">Profile</span></a>
             </li>

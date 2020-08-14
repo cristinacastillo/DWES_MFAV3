@@ -7,13 +7,22 @@
 }
 
 .g {
-    background-color: rgba(232, 232, 232, 0.3);
+    background-color: rgba(5,50,103,0.1);
+
 }
 
+
 .o,
-.c ,.g, .video{
+.c ,.g, .video, .form{
     border: 0.1px solid lightgrey;
     border-radius: 10px;
+}
+
+
+.form{
+
+	padding-top: 2vw;
+
 }
 
 

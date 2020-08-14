@@ -10,7 +10,7 @@
 
 			@guest
 
-			<div class="col-sm-8 g">
+			<div class="col-sm-8 g ad">
 
 			@else
 
@@ -34,52 +34,43 @@
 
 			</div>
 
-			
-			<div class="col-sm-4">
+			@guest
+				<div class="col-sm-4 form">
 
-				@guest
+					<form class="myForm" method="POST" action="{{ route('login') }}">
 
-					<div class="">
+						@csrf
+			            <div class="field">
+			                
+			                <input id="email" type="email" name="email" class="myInput @error('email') is-invalid @enderror"  value="{{ old('email') }}"  autocomplete="email" autofocus required>
+			                <label class="myLabel" for="email">Email</label>
 
-						<form class="myForm" method="POST" action="{{ route('login') }}">
+			                @error('email')
+	                            <span class="invalid-feedback" role="alert">
+	                                <strong>{{ $message }}</strong>
+	                            </span>
+	                        @enderror
 
-							@csrf
-				            <div class="field">
-				                
-				                <input id="email" type="email" name="email" class="myInput @error('email') is-invalid @enderror"  value="{{ old('email') }}"  autocomplete="email" autofocus required>
-				                <label class="myLabel" for="email">Email</label>
+			            </div>
+			            
+			            <div class="field">
 
-				                @error('email')
-	                                <span class="invalid-feedback" role="alert">
-	                                    <strong>{{ $message }}</strong>
-	                                </span>
-	                            @enderror
+			                <input id="password" type="password" name="password" class="myInput @error('password') is-invalid @enderror" autocomplete="current-password" required>
+			                <label class="myLabel" for="password">Password</label>
 
-				            </div>
-				            
-				            <div class="field">
+			                @error('password')
+	                            <span class="invalid-feedback" role="alert">
+	                                <strong>{{ $message }}</strong>
+	                            </span>
+	                        @enderror
 
-				                <input id="password" type="password" name="password" class="myInput @error('password') is-invalid @enderror" autocomplete="current-password" required>
-				                <label class="myLabel" for="password">Password</label>
+			            </div>
+			            <button class="myButton" type="submit" >Login</button>
+			        </form>
+					    
+				</div>
 
-				                @error('password')
-	                                <span class="invalid-feedback" role="alert">
-	                                    <strong>{{ $message }}</strong>
-	                                </span>
-	                            @enderror
-
-				            </div>
-				            <button class="myButton" type="submit" >Login</button>
-				        </form>
-				    </div>
-				@else
-
-
-
-				@endguest
-
-
-			</div>
+			@endguest
 
 			
 
@@ -183,8 +174,13 @@
 			        <source src="{{ asset('/img/video/prote.mp4') }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
 			    </video>-->
 
-			    <div class="embed-responsive embed-responsive-16by9 video" autoplay="false=">
-					<iframe class="embed-responsive-item" src="{{ asset('/img/video/prote.mp4') }}"></iframe>
+			    <div class="embed-responsive embed-responsive-16by9 video" >
+
+					<!--<iframe class="embed-responsive-item" src="{{ asset('/img/video/prote.mp4') }}"  autoplay="0" muted="1"></iframe>-->
+					<video  controls autoplay="1" muted="1">
+					    <source src="{{ asset('/img/video/prote.mp4') }}" type="video/mp4">
+					</video>
+
 				</div>
 			
 			</div>

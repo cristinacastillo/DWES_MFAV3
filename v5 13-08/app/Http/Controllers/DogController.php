@@ -32,7 +32,7 @@ class DogController extends Controller
      */
     function list() {
 
-        //dog = Dog::all();
+        //dog = Dog::all()->simplePaginate(6);
         $dog = DB::table('dog')->where('status', 0)->simplePaginate(6);
 
         return view('dog.index', ['dog' => $dog]);

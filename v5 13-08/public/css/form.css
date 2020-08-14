@@ -1,4 +1,18 @@
+.formDog{
 
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+
+
+.inputPhoto, .inputBirth{
+   margin-top: 1vw;
+}
+
+.inputSearch{
+ margin-top: 0vw;
+}
 
 .myLabel {
     color: #a2aabd;
@@ -6,7 +20,7 @@
     font-weight: 500;
     left: .5em;
     position: absolute;
-    top: .25em;
+    top: .0em;
     transition: all 0.1s linear;
 }
 

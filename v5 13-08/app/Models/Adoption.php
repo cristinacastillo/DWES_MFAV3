@@ -86,6 +86,7 @@ class Adoption extends Model
                             })
                          ->select("a.*","d.name as nameDog","u.name as nameUse")
                          ->where('a.status','=', 0)
+                         ->orderBy('a.dateAdop','asc')
                          ->get();
 
        

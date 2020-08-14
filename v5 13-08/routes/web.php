@@ -89,10 +89,13 @@ Route::middleware(['auth'])->group(function(){
 
 	// ADMIN
 	Route::get('admin','AdminController@index' )->middleware('checkUserProfile')->name('admin') ;
-	Route::get('users','AdminController@users' )->middleware('checkUserProfile')->name('users.list') ;
+	//Route::get('users','AdminController@users' )->middleware('checkUserProfile')->name('users.list') ;
 	
-	//Search thread
+	//Search users
  	Route::get('/search', 'UserController@search');
+
+ 	//Search Reqs
+ 	Route::get('/search2', 'AdoptionController@search2');
 
 
 });

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Adoption;
 use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
@@ -15,15 +16,25 @@ class AdminController extends Controller
      */
     public function index(){
 
-    	return view('admin.index');
+    	$users = DB::table('user')->where('profile',0)->paginate(10);
+
+        $adops = Adoption::showForAdmin();
+
+        
+        //$dog = DB::table('dog')->where('status', 0)->simplePaginate(6);
+
+        return view('admin.index', ['users' => $users,'adops' => $adops]);
 
     }
 
     public function users(){
 
-    	$users = User::all();
+    	//$users = User::all()->paginate(15);
 
-    	return view('admin.users', ['users' => $users]);
+        $users = DB::table('user')->where('profile',0)->paginate(15);
+        //$dog = DB::table('dog')->where('status', 0)->simplePaginate(6);
+
+    	return view('admin.index', ['users' => $users]);
     }
 
    

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Adoption;
 use App\Models\Dog;
+use App\Models\User;
 
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
@@ -90,6 +91,36 @@ class AdoptionController extends Controller
 
     	//
     	return $adop ;
+    }
+
+
+    public function search2(Request $req){
+
+       //Check if $req contains ajax or clear
+        if($req->ajax2() && $req->search2 != ""):
+
+            $output= "";
+            $data="";
+
+            $data = DB::table('user')->where('name','LIKE','%'.$req->search2."%")->get();
+
+            if($data):
+                foreach ($data as $item):
+                    /* $output.='<tr>'.
+                    "<td><a href=". "localhost/mfa/mfa/public/users/view?id=".$item->idUse.""."\">".$item->idUse."</a></td>".
+                    '</tr>';*/
+                    //$output.='<p>'."<a href="."{{ route('user.info', ['id' => $item->idUse."}}"."\">". $item->name ."</a>".'</p><br>';
+                    //$output.='<p>'. $item->name .'</p><br>';
+
+                    $output.='<p>'.
+                    "<td class='myTd' data-label='Due Date'>hola</td>".
+                    '</p>';
+                endforeach;
+
+                return response ($output);
+            endif;
+        endif;
+             
     }
 
 }
