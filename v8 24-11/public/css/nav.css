@@ -1,0 +1,57 @@
+footer {
+    clear: both;
+}
+
+.myNav,
+footer {
+    background-color: rgb(5, 50, 103);
+    width: 100%;
+}
+
+.myLi {
+    font-size: 15px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.myI {
+    margin-left: 0.2vw;
+}
+
+.mySpan {
+    color: white;
+}
+
+.logoNav {
+    filter: invert(1);
+    width: 21%;
+    margin-left: 2%;
+}
+
+.navbar-toggler {
+    float: right;
+}
+
+
+/*Color arrow dropdown*/
+
+.dropdown-toggle::after {
+    color: white !important;
+}
+
+
+/**/
+
+[class*='ic'] {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .logoNav {
+        /*background:  url(" {{ asset('img/edit.svg') }} ");*/
+        width: 32%;
+    }
+    footer {
+        height: 50%;
+    }
+}

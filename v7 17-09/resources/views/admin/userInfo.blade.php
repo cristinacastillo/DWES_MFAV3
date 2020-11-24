@@ -78,9 +78,9 @@
             <div class="col-sm-6">
                 <h3> Pending adoptions from {{ $user->name }} </h3>
 
-                @if(!$adops->isEmpty())
-                    @foreach($adops as $adop)
-                        @if($adop->status == 0)
+                @if(!$reqs->isEmpty())
+                    @foreach($reqs as $adop)
+                        
                             <div class="media mediaUser p-4">
                                 <img src="{{ asset('/storage/dogs') }}/{{ $adop->photo }}" class="mr-3 photoDogUser" alt="...">
                                 <div class="media-body">
@@ -93,7 +93,7 @@
                                     <a href="{{ route('adop.status', ['idAdop' => $adop->idAdop, 'value' => 2, 'idDog' => $adop->idDog]) }}" "><span class="badge badge-pill badge-danger">Denny</span></a>
                                 </div>
                             </div>
-                        @endif
+                        
 
                     @endforeach
                 @else

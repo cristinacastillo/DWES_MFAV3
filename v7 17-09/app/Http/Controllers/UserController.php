@@ -228,15 +228,17 @@ $req->validate([
 
         // check if the user has adopted dogs
         $adops = Adoption::showAdoptionsUser($req->input('id'));
+        $reqs = Adoption::showRequestUser($req->input('id'));
 
-        //dd($adops);
+        //dd($reqs);
+
 
         // collect the comments of a certain dog
         /* $comment = CommentDog::commentsDog($req->input('id'));
 
         $comment->withPath('info?id='.$req->input('id'));*/
 
-        return view('admin.userInfo', ['user' => $user, 'adops' => $adops]);
+        return view('admin.userInfo', ['user' => $user, 'adops' => $adops, 'reqs' => $reqs]);
 
         //return view('admin.userInfo');
     }

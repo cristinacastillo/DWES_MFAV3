@@ -17,75 +17,75 @@
     </div>
     @endif
 
-<!--<div class="row">
+
+
+<div class="row">
+
+
+
 
     <div class="col-sm-12  tableReq mx-auto">
 
       <h2 class="mt-4 text-center">REQUESTS</h2>
 
-      @if(!$adops->isEmpty())
+      <input id="search2" type="text" class=myInput placeholder="Search here for any request" name="search2">
 
-        <input id="search2" type="text" class=myInput placeholder="Search here for any request" name="search2">  
-        
-        <table class="myTable" id="result2">
-          
-          <thead class="myThead">
-            <tr class="myTr">
-              <th class="myTh" scope="col">User Name</th>
-              <th class="myTh" scope="col">Date Request</th>
-              <th class="myTh" scope="col">Reason</th>
-              <th class="myTh" scope="col">Name Dog</th>
-              <th class="myTh" scope="col">Status</th>
-            </tr>
-          </thead>
+      <table class="myTable" id="result2">
 
-          <tbody id="ajax2">
-              <!-- Body of AJAX table here-->
-        <!--  <tbody>
+        <thead class="myThead">
+          <tr class="myTr">
+            <th class="myTh" scope="col">User Name</th>
+            <th class="myTh" scope="col">Date Request</th>
+            <th class="myTh" scope="col">Reason</th>
+            <th class="myTh" scope="col">Name Dog</th>
+            <th class="myTh" scope="col">Status</th>
+          </tr>
+        </thead>
 
-          <tbody id="index2">
+        <tbody id="ajax2">
+            <!-- Body of AJAX table here-->
+        <tbody>
+
+        <tbody id="index2">
 
 
 
-            @foreach($adops as $item)
-            <tr class="myTr">
-              <td class="myTd" data-label="Account">{{ $item->nameUse }}</td>
-              <td class="myTd" data-label="Due Date">{{ $item->dateAdop }}</td>
-              <td class="myTd" data-label="Amount">{{ $item->reason }}</td>
-              <td class="myTd" data-label="Amount">{{ $item->nameDog }}</td>
-              <td class="myTd" data-label="Period">
-                <a href="{{ route('adop.status', ['idAdop' => $item->idAdop, 'value' => 1, 'idDog' => $item->idDog]) }}" "><span class="badge badge-pill badge-success">Accept</span></a>
-                <a href="{{ route('adop.status', ['idAdop' => $item->idAdop, 'value' => 2, 'idDog' => $item->idDog]) }}" "><span class="badge badge-pill badge-danger">Denny</span></a>
-              </td>
-            </tr>
+          @foreach($adops as $item)
+          <tr class="myTr">
+            <td class="myTd" data-label="Name User"><a href="{{ route('user.info', ['id' => $item->idUse]) }}">{{ $item->nameUse }}</a></td>
+            <td class="myTd" data-label="Date Request">{{ $item->dateAdop }}</td>
+            <td class="myTd" data-label="Reason">{{ $item->reason }}</td>
+            <td class="myTd" data-label="Name Dog"><a href="{{ route('dog.info', ['id' => $item->idDog]) }}">{{ $item->nameDog }}</a></td>
+            <td class="myTd" data-label="Status">
+              <a href="{{ route('adop.status', ['idAdop' => $item->idAdop, 'value' => 1, 'idDog' => $item->idDog]) }}" "><span class="badge badge-pill badge-success">Accept</span></a>
+              <a href="{{ route('adop.status', ['idAdop' => $item->idAdop, 'value' => 2, 'idDog' => $item->idDog]) }}" "><span class="badge badge-pill badge-danger">Denny</span></a>
+            </td>
+          </tr>
 
-            @endforeach
-            
-          </tbody>
-        </table>
-        <div id="aviso2" class="mx-auto text-center"></div>
+          @endforeach
 
-        <div class="row">
-          <div class="mx-auto">
-          {{ $adops->links() }}
-          </div>
+        </tbody>
+      </table>
+      <div id="aviso2" class="mx-auto text-center"></div>
+
+      <div class="row">
+        <div class="mx-auto">
+        {{ $adops->links() }}
         </div>
-
-        @else
-          <h6 class="text-center">No requests yet</h6>
-        @endif
-
       </div>
 
-   
-    
-  </div>-->
+    </div>
+
+
+
+
+  </div>
 
   <hr>
-  
+
 
   <div class="row">
-    
+
     <div class="col-sm-6 g ">
 
       <h2 class="mt-4 text-center">NEW DOG</h2>
@@ -95,7 +95,7 @@
         @csrf
 
         <div class="field">
-            
+
             <input type="text" name="name" class="myInput" value="{{ old('name') }}"  autocomplete="name" autofocus required>
             <label class="myLabel" for="name">@lang('messages.lbname')</label>
 
@@ -108,7 +108,7 @@
         </div>
 
         <div class="field">
-            
+
             <input type="text" name="breed" class="myInput" value="{{ old('breed') }}"  autocomplete="breed" autofocus required>
             <label class="myLabel" for="name">@lang('messages.lbbreed')</label>
 
@@ -121,7 +121,7 @@
         </div>
 
         <div class="field">
-            
+
             <input type="text" name="gender" class="myInput" value="{{ old('gender') }}"  autocomplete="gender" autofocus required>
             <label class="myLabel" for="gender">@lang('messages.lbgender')</label>
 
@@ -134,7 +134,7 @@
         </div>
 
         <div class="field">
-            
+
             <input type="date" name="birthdate" class="myInput inputBirth" value="{{ old('birthdate') }}"  autocomplete="birthdate" autofocus required>
             <label class="myLabel" for="name">@lang('messages.lbbirthdate')</label>
 
@@ -147,7 +147,7 @@
         </div>
 
         <div class="field">
-            
+
             <textarea type="text" name="description" class="myInput" value="{{ old('description') }}"  autocomplete="description" autofocus required></textarea>
             <label class="myLabel" for="description">@lang('messages.lbdescription')</label>
 
@@ -161,7 +161,7 @@
 
 
         <div class="field">
-            
+
             <input type="file" name="photo" class="myInput inputPhoto" value="{{ old('photo') }}"  autocomplete="photo" accept="image/png, image/jpeg" multiple  required>
             <label class="myLabel" for="photo">@lang('messages.lbphoto')</label>
 
@@ -186,7 +186,7 @@
       <h2 class="mt-4 mb-4 text-center">USER LIST</h2>
 
 
-      <input id="search" type="text" class="myInput mt-4" placeholder="Search here for any user" name="search"><br>    
+      <input id="search" type="text" class="myInput mt-4" placeholder="Search here for any user" name="search"><br>
 
 
         <table id="results" class="table table-borderless">
@@ -219,7 +219,7 @@
           </div>
         </div>
 
-        
+
 
     </div>
 
@@ -228,85 +228,9 @@
   <br>
   <br>
 
-  
 
 
 
-<div class="row">
-  <div class="col-4">
-    <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
-      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
-    </div>
-  </div>
-  <div class="col-8">
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
-      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><div class="row">
-
-
-
-    <div class="col-sm-12  tableReq mx-auto">
-
-      <h2 class="mt-4 text-center">REQUESTS</h2>
-
-      <input id="search2" type="text" class=myInput placeholder="Search here for any request" name="search2">  
-      
-      <table class="myTable" id="result2">
-        
-        <thead class="myThead">
-          <tr class="myTr">
-            <th class="myTh" scope="col">User Name</th>
-            <th class="myTh" scope="col">Date Request</th>
-            <th class="myTh" scope="col">Reason</th>
-            <th class="myTh" scope="col">Name Dog</th>
-            <th class="myTh" scope="col">Status</th>
-          </tr>
-        </thead>
-
-        <tbody id="ajax2">
-            <!-- Body of AJAX table here-->
-        <tbody>
-
-        <tbody id="index2">
-
-
-
-          @foreach($adops as $item)
-          <tr class="myTr">
-            <td class="myTd" data-label="Account">{{ $item->nameUse }}</td>
-            <td class="myTd" data-label="Due Date">{{ $item->dateAdop }}</td>
-            <td class="myTd" data-label="Amount">{{ $item->reason }}</td>
-            <td class="myTd" data-label="Amount">{{ $item->nameDog }}</td>
-            <td class="myTd" data-label="Period">
-              <a href="{{ route('adop.status', ['idAdop' => $item->idAdop, 'value' => 1, 'idDog' => $item->idDog]) }}" "><span class="badge badge-pill badge-success">Accept</span></a>
-              <a href="{{ route('adop.status', ['idAdop' => $item->idAdop, 'value' => 2, 'idDog' => $item->idDog]) }}" "><span class="badge badge-pill badge-danger">Denny</span></a>
-            </td>
-          </tr>
-
-          @endforeach
-          
-        </tbody>
-      </table>
-      <div id="aviso2" class="mx-auto text-center"></div>
-    </div>
-
-
-    <div class="row">
-      <div class="mx-auto">
-      {{ $adops->links() }}
-      </div>
-    </div>
-    
-  </div>
-</div>
-      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-    </div>
-  </div>
-</div>
 
 
 

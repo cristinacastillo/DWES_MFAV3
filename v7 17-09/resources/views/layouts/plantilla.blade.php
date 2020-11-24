@@ -47,6 +47,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/form.css') }}">
 
+
+
     
 
     <!--<script type="text/javascript" src="{{ asset('../resources/nav.js') }}"></script>-->
@@ -164,7 +166,7 @@
     </nav>
 
 
-    <div class="container mt-4 mb-5">
+    <div class="container mt-4 mb-5 main">
 
 
 
