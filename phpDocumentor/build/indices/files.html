@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/app.html"><abbr title="\App">App</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/app-models.html"><abbr title="\App\Models">Models</abbr></a></li>
+                                            <li><a href="namespaces/app-console.html"><abbr title="\App\Console">Console</abbr></a></li>
+                                            <li><a href="namespaces/app-exceptions.html"><abbr title="\App\Exceptions">Exceptions</abbr></a></li>
+                                            <li><a href="namespaces/app-http.html"><abbr title="\App\Http">Http</abbr></a></li>
+                                            <li><a href="namespaces/app-providers.html"><abbr title="\App\Providers">Providers</abbr></a></li>
+                                    </ul>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/tests.html"><abbr title="\Tests">Tests</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/tests-feature.html"><abbr title="\Tests\Feature">Feature</abbr></a></li>
+                                            <li><a href="namespaces/tests-unit.html"><abbr title="\Tests\Unit">Unit</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Laravel.html"><abbr title="\Laravel">Laravel</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    
+    <h2>Files</h2>
+                            <h3>A</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-admincontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/AdminController.php">AdminController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-admincontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/AdminController.php">AdminController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-admincontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/AdminController.php">AdminController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-admincontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/AdminController.php">AdminController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-admincontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/AdminController.php">AdminController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-models-adoption.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Models/Adoption.php">Adoption.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-models-adoption.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Models/Adoption.php">Adoption.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-models-adoption.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Models/Adoption.php">Adoption.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-models-adoption.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Models/Adoption.php">Adoption.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-models-adoption.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Models/Adoption.php">Adoption.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-adoptioncontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/AdoptionController.php">AdoptionController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-adoptioncontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/AdoptionController.php">AdoptionController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-adoptioncontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/AdoptionController.php">AdoptionController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-adoptioncontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/AdoptionController.php">AdoptionController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-adoptioncontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/AdoptionController.php">AdoptionController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-providers-appserviceprovider.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Providers/AppServiceProvider.php">AppServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-providers-appserviceprovider.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Providers/AppServiceProvider.php">AppServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-providers-appserviceprovider.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Providers/AppServiceProvider.php">AppServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-providers-appserviceprovider.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Providers/AppServiceProvider.php">AppServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-providers-appserviceprovider.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Providers/AppServiceProvider.php">AppServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-providers-authserviceprovider.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Providers/AuthServiceProvider.php">AuthServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-providers-authserviceprovider.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Providers/AuthServiceProvider.php">AuthServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-providers-authserviceprovider.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Providers/AuthServiceProvider.php">AuthServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-providers-authserviceprovider.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Providers/AuthServiceProvider.php">AuthServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-providers-authserviceprovider.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Providers/AuthServiceProvider.php">AuthServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-middleware-authenticate.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Middleware/Authenticate.php">Authenticate.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-middleware-authenticate.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Middleware/Authenticate.php">Authenticate.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-middleware-authenticate.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Middleware/Authenticate.php">Authenticate.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-middleware-authenticate.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Middleware/Authenticate.php">Authenticate.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-middleware-authenticate.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Middleware/Authenticate.php">Authenticate.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-dog-adoptions-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/dog/adoptions.blade.php">adoptions.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-routes-api.html"><abbr title="DWES_MFAV3-master/v1 01-07/routes/api.php">api.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-routes-api.html"><abbr title="DWES_MFAV3-master/v2 16-07/routes/api.php">api.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-routes-api.html"><abbr title="DWES_MFAV3-master/v3 04-08/routes/api.php">api.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-routes-api.html"><abbr title="DWES_MFAV3-master/v5 13-08/routes/api.php">api.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-routes-api.html"><abbr title="DWES_MFAV3-master/v4 11-08/routes/api.php">api.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-layouts-app-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/layouts/app.blade.php">app.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-layouts-app-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/layouts/app.blade.php">app.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-layouts-app-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/layouts/app.blade.php">app.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-layouts-app-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/layouts/app.blade.php">app.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-layouts-app-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/layouts/app.blade.php">app.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-app.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-app.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-bootstrap-app.html"><abbr title="DWES_MFAV3-master/v2 16-07/bootstrap/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-bootstrap-app.html"><abbr title="DWES_MFAV3-master/v1 01-07/bootstrap/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-bootstrap-app.html"><abbr title="DWES_MFAV3-master/v5 13-08/bootstrap/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-app.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-bootstrap-app.html"><abbr title="DWES_MFAV3-master/v4 11-08/bootstrap/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-app.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-app.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-bootstrap-app.html"><abbr title="DWES_MFAV3-master/v3 04-08/bootstrap/app.php">app.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-auth.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/auth.php">auth.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-auth.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/auth.php">auth.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-auth.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/auth.php">auth.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-lang-en-auth.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/lang/en/auth.php">auth.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-lang-en-auth.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/lang/en/auth.php">auth.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-lang-en-auth.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/lang/en/auth.php">auth.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-auth.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/auth.php">auth.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-lang-en-auth.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/lang/en/auth.php">auth.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-auth.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/auth.php">auth.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-lang-en-auth.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/lang/en/auth.php">auth.php</abbr></a></li>
+                </ul>
+                                    <h3>B</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-providers-broadcastserviceprovider.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Providers/BroadcastServiceProvider.php">BroadcastServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-providers-broadcastserviceprovider.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Providers/BroadcastServiceProvider.php">BroadcastServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-providers-broadcastserviceprovider.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Providers/BroadcastServiceProvider.php">BroadcastServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-providers-broadcastserviceprovider.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Providers/BroadcastServiceProvider.php">BroadcastServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-providers-broadcastserviceprovider.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Providers/BroadcastServiceProvider.php">BroadcastServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-vendor-pagination-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/vendor/pagination/bootstrap-4.blade.php">bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-vendor-pagination-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/vendor/pagination/bootstrap-4.blade.php">bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-vendor-pagination-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/vendor/pagination/bootstrap-4.blade.php">bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-vendor-pagination-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/vendor/pagination/bootstrap-4.blade.php">bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-vendor-pagination-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/vendor/pagination/bootstrap-4.blade.php">bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-broadcasting.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/broadcasting.php">broadcasting.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-broadcasting.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/broadcasting.php">broadcasting.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-broadcasting.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/broadcasting.php">broadcasting.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-broadcasting.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/broadcasting.php">broadcasting.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-broadcasting.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/broadcasting.php">broadcasting.php</abbr></a></li>
+                </ul>
+                                    <h3>C</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-middleware-checkformaintenancemode.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Middleware/CheckForMaintenanceMode.php">CheckForMaintenanceMode.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-middleware-checkformaintenancemode.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Middleware/CheckForMaintenanceMode.php">CheckForMaintenanceMode.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-middleware-checkformaintenancemode.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Middleware/CheckForMaintenanceMode.php">CheckForMaintenanceMode.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-middleware-checkformaintenancemode.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Middleware/CheckForMaintenanceMode.php">CheckForMaintenanceMode.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-middleware-checkformaintenancemode.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Middleware/CheckForMaintenanceMode.php">CheckForMaintenanceMode.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-models-commentdog.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Models/CommentDog.php">CommentDog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-models-commentdog.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Models/CommentDog.php">CommentDog.php</abbr></a></li>
+                    <li><a href="files/commentdog.html"><abbr title="CommentDog.php">CommentDog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-models-commentdog.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Models/CommentDog.php">CommentDog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-models-commentdog.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Models/CommentDog.php">CommentDog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-models-commentdog.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Models/CommentDog.php">CommentDog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-commentdogcontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/CommentDogController.php">CommentDogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-commentdogcontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/CommentDogController.php">CommentDogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-commentdogcontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/CommentDogController.php">CommentDogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-commentdogcontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/CommentDogController.php">CommentDogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-commentdogcontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/CommentDogController.php">CommentDogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-auth-confirmpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/Auth/ConfirmPasswordController.php">ConfirmPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-auth-confirmpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/Auth/ConfirmPasswordController.php">ConfirmPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-auth-confirmpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/Auth/ConfirmPasswordController.php">ConfirmPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-auth-confirmpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/Auth/ConfirmPasswordController.php">ConfirmPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-auth-confirmpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/Auth/ConfirmPasswordController.php">ConfirmPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-controller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/Controller.php">Controller.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-controller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/Controller.php">Controller.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-controller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/Controller.php">Controller.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-controller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/Controller.php">Controller.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-controller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/Controller.php">Controller.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-tests-createsapplication.html"><abbr title="DWES_MFAV3-master/v3 04-08/tests/CreatesApplication.php">CreatesApplication.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-tests-createsapplication.html"><abbr title="DWES_MFAV3-master/v4 11-08/tests/CreatesApplication.php">CreatesApplication.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-tests-createsapplication.html"><abbr title="DWES_MFAV3-master/v2 16-07/tests/CreatesApplication.php">CreatesApplication.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-tests-createsapplication.html"><abbr title="DWES_MFAV3-master/v1 01-07/tests/CreatesApplication.php">CreatesApplication.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-tests-createsapplication.html"><abbr title="DWES_MFAV3-master/v5 13-08/tests/CreatesApplication.php">CreatesApplication.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-cache.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/cache.php">cache.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-cache.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/cache.php">cache.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-cache.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/cache.php">cache.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-cache.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/cache.php">cache.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-cache.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/cache.php">cache.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-routes-channels.html"><abbr title="DWES_MFAV3-master/v1 01-07/routes/channels.php">channels.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-routes-channels.html"><abbr title="DWES_MFAV3-master/v2 16-07/routes/channels.php">channels.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-routes-channels.html"><abbr title="DWES_MFAV3-master/v4 11-08/routes/channels.php">channels.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-routes-channels.html"><abbr title="DWES_MFAV3-master/v3 04-08/routes/channels.php">channels.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-routes-channels.html"><abbr title="DWES_MFAV3-master/v5 13-08/routes/channels.php">channels.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-middleware-checkuserprofile.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Middleware/checkUserProfile.php">checkUserProfile.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-middleware-checkuserprofile.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Middleware/checkUserProfile.php">checkUserProfile.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-middleware-checkuserprofile.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Middleware/checkUserProfile.php">checkUserProfile.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-middleware-checkuserprofile.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Middleware/checkUserProfile.php">checkUserProfile.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-middleware-checkuserprofile.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Middleware/checkUserProfile.php">checkUserProfile.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-auth-passwords-confirm-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/auth/passwords/confirm.blade.php">confirm.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-auth-passwords-confirm-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/auth/passwords/confirm.blade.php">confirm.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-auth-passwords-confirm-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/auth/passwords/confirm.blade.php">confirm.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-auth-passwords-confirm-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/auth/passwords/confirm.blade.php">confirm.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-auth-passwords-confirm-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/auth/passwords/confirm.blade.php">confirm.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-routes-console.html"><abbr title="DWES_MFAV3-master/v4 11-08/routes/console.php">console.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-routes-console.html"><abbr title="DWES_MFAV3-master/v5 13-08/routes/console.php">console.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-routes-console.html"><abbr title="DWES_MFAV3-master/v2 16-07/routes/console.php">console.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-routes-console.html"><abbr title="DWES_MFAV3-master/v1 01-07/routes/console.php">console.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-routes-console.html"><abbr title="DWES_MFAV3-master/v3 04-08/routes/console.php">console.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-cors.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/cors.php">cors.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-cors.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/cors.php">cors.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-cors.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/cors.php">cors.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-cors.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/cors.php">cors.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-cors.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/cors.php">cors.php</abbr></a></li>
+                </ul>
+                                    <h3>D</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-database-seeds-databaseseeder.html"><abbr title="DWES_MFAV3-master/v4 11-08/database/seeds/DatabaseSeeder.php">DatabaseSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-database-seeds-databaseseeder.html"><abbr title="DWES_MFAV3-master/v5 13-08/database/seeds/DatabaseSeeder.php">DatabaseSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-database-seeds-databaseseeder.html"><abbr title="DWES_MFAV3-master/v3 04-08/database/seeds/DatabaseSeeder.php">DatabaseSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-database-seeds-databaseseeder.html"><abbr title="DWES_MFAV3-master/v1 01-07/database/seeds/DatabaseSeeder.php">DatabaseSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-database-seeds-databaseseeder.html"><abbr title="DWES_MFAV3-master/v2 16-07/database/seeds/DatabaseSeeder.php">DatabaseSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-models-dog.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Models/Dog.php">Dog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-models-dog.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Models/Dog.php">Dog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-models-dog.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Models/Dog.php">Dog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-models-dog.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Models/Dog.php">Dog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-models-dog.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Models/Dog.php">Dog.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-dogcontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/DogController.php">DogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-dogcontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/DogController.php">DogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-dogcontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/DogController.php">DogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-dogcontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/DogController.php">DogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-dogcontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/DogController.php">DogController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-database.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/database.php">database.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-database.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/database.php">database.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-database.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/database.php">database.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-database.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/database.php">database.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-database.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/database.php">database.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-vendor-pagination-default-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/vendor/pagination/default.blade.php">default.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-vendor-pagination-default-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/vendor/pagination/default.blade.php">default.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-vendor-pagination-default-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/vendor/pagination/default.blade.php">default.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-vendor-pagination-default-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/vendor/pagination/default.blade.php">default.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-vendor-pagination-default-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/vendor/pagination/default.blade.php">default.blade.php</abbr></a></li>
+                </ul>
+                                    <h3>E</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-middleware-encryptcookies.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Middleware/EncryptCookies.php">EncryptCookies.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-middleware-encryptcookies.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Middleware/EncryptCookies.php">EncryptCookies.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-middleware-encryptcookies.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Middleware/EncryptCookies.php">EncryptCookies.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-middleware-encryptcookies.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Middleware/EncryptCookies.php">EncryptCookies.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-middleware-encryptcookies.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Middleware/EncryptCookies.php">EncryptCookies.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-providers-eventserviceprovider.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Providers/EventServiceProvider.php">EventServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-providers-eventserviceprovider.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Providers/EventServiceProvider.php">EventServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-providers-eventserviceprovider.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Providers/EventServiceProvider.php">EventServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-providers-eventserviceprovider.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Providers/EventServiceProvider.php">EventServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-providers-eventserviceprovider.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Providers/EventServiceProvider.php">EventServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-tests-unit-exampletest.html"><abbr title="DWES_MFAV3-master/v4 11-08/tests/Unit/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-tests-feature-exampletest.html"><abbr title="DWES_MFAV3-master/v2 16-07/tests/Feature/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-tests-feature-exampletest.html"><abbr title="DWES_MFAV3-master/v3 04-08/tests/Feature/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-tests-unit-exampletest.html"><abbr title="DWES_MFAV3-master/v3 04-08/tests/Unit/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-tests-unit-exampletest.html"><abbr title="DWES_MFAV3-master/v2 16-07/tests/Unit/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-tests-feature-exampletest.html"><abbr title="DWES_MFAV3-master/v5 13-08/tests/Feature/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-tests-feature-exampletest.html"><abbr title="DWES_MFAV3-master/v4 11-08/tests/Feature/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-tests-unit-exampletest.html"><abbr title="DWES_MFAV3-master/v5 13-08/tests/Unit/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-tests-feature-exampletest.html"><abbr title="DWES_MFAV3-master/v1 01-07/tests/Feature/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-tests-unit-exampletest.html"><abbr title="DWES_MFAV3-master/v1 01-07/tests/Unit/ExampleTest.php">ExampleTest.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-auth-passwords-email-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/auth/passwords/email.blade.php">email.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-auth-passwords-email-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/auth/passwords/email.blade.php">email.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-auth-passwords-email-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/auth/passwords/email.blade.php">email.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-auth-passwords-email-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/auth/passwords/email.blade.php">email.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-auth-passwords-email-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/auth/passwords/email.blade.php">email.blade.php</abbr></a></li>
+                </ul>
+                                    <h3>F</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-auth-forgotpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/Auth/ForgotPasswordController.php">ForgotPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-auth-forgotpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/Auth/ForgotPasswordController.php">ForgotPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-auth-forgotpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/Auth/ForgotPasswordController.php">ForgotPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-auth-forgotpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/Auth/ForgotPasswordController.php">ForgotPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-auth-forgotpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/Auth/ForgotPasswordController.php">ForgotPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-filesystems.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/filesystems.php">filesystems.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-filesystems.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/filesystems.php">filesystems.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-filesystems.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/filesystems.php">filesystems.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-filesystems.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/filesystems.php">filesystems.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-filesystems.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/filesystems.php">filesystems.php</abbr></a></li>
+                </ul>
+                                                        <h3>H</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-exceptions-handler.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Exceptions/Handler.php">Handler.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-exceptions-handler.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Exceptions/Handler.php">Handler.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-exceptions-handler.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Exceptions/Handler.php">Handler.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-exceptions-handler.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Exceptions/Handler.php">Handler.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-exceptions-handler.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Exceptions/Handler.php">Handler.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-homecontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/HomeController.php">HomeController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-homecontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/HomeController.php">HomeController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-homecontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/HomeController.php">HomeController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-homecontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/HomeController.php">HomeController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-homecontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/HomeController.php">HomeController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-hashing.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/hashing.php">hashing.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-hashing.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/hashing.php">hashing.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-hashing.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/hashing.php">hashing.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-hashing.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/hashing.php">hashing.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-hashing.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/hashing.php">hashing.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-home-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/home.blade.php">home.blade.php</abbr></a></li>
+                </ul>
+                                    <h3>I</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-index-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-admin-index-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/admin/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-admin-index-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/admin/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-dog-index-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/dog/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-index-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-admin-index-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/admin/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-dog-index-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/dog/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-dog-index-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/dog/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-dog-index-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/dog/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-index-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-admin-index-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/admin/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-index-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-dog-index-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/dog/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-admin-index-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/admin/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-index-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/index.blade.php">index.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-public-index.html"><abbr title="DWES_MFAV3-master/v5 13-08/public/index.php">index.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-public-index.html"><abbr title="DWES_MFAV3-master/v4 11-08/public/index.php">index.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-public-index.html"><abbr title="DWES_MFAV3-master/v3 04-08/public/index.php">index.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-public-index.html"><abbr title="DWES_MFAV3-master/v2 16-07/public/index.php">index.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-public-index.html"><abbr title="DWES_MFAV3-master/v1 01-07/public/index.php">index.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-index2-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/index2.blade.php">index2.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-index2-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/index2.blade.php">index2.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-index2-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/index2.blade.php">index2.blade.php</abbr></a></li>
+                </ul>
+                                                        <h3>K</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-console-kernel.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Console/Kernel.php">Kernel.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-kernel.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Kernel.php">Kernel.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-console-kernel.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Console/Kernel.php">Kernel.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-kernel.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Kernel.php">Kernel.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-console-kernel.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Console/Kernel.php">Kernel.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-kernel.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Kernel.php">Kernel.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-kernel.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Kernel.php">Kernel.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-kernel.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Kernel.php">Kernel.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-console-kernel.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Console/Kernel.php">Kernel.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-console-kernel.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Console/Kernel.php">Kernel.php</abbr></a></li>
+                </ul>
+                                    <h3>L</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-auth-logincontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/Auth/LoginController.php">LoginController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-auth-logincontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/Auth/LoginController.php">LoginController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-auth-logincontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/Auth/LoginController.php">LoginController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-auth-logincontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/Auth/LoginController.php">LoginController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-auth-logincontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/Auth/LoginController.php">LoginController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-logging.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/logging.php">logging.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-logging.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/logging.php">logging.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-logging.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/logging.php">logging.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-logging.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/logging.php">logging.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-logging.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/logging.php">logging.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-auth-login-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/auth/login.blade.php">login.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-auth-login-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/auth/login.blade.php">login.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-auth-login-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/auth/login.blade.php">login.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-auth-login-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/auth/login.blade.php">login.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-auth-login-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/auth/login.blade.php">login.blade.php</abbr></a></li>
+                </ul>
+                                    <h3>M</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-mail.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/mail.php">mail.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-mail.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/mail.php">mail.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-mail.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/mail.php">mail.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-mail.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/mail.php">mail.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-mail.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/mail.php">mail.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-lang-en-messages.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/lang/en/messages.php">messages.php</abbr></a></li>
+                </ul>
+                                                                            <h3>P</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-lang-en-pagination.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/lang/en/pagination.php">pagination.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-lang-en-pagination.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/lang/en/pagination.php">pagination.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-lang-en-pagination.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/lang/en/pagination.php">pagination.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-lang-en-pagination.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/lang/en/pagination.php">pagination.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-lang-en-pagination.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/lang/en/pagination.php">pagination.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-lang-en-passwords.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/lang/en/passwords.php">passwords.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-lang-en-passwords.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/lang/en/passwords.php">passwords.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-lang-en-passwords.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/lang/en/passwords.php">passwords.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-lang-en-passwords.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/lang/en/passwords.php">passwords.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-lang-en-passwords.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/lang/en/passwords.php">passwords.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-layouts-plantilla-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/layouts/plantilla.blade.php">plantilla.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-layouts-plantilla-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/layouts/plantilla.blade.php">plantilla.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-layouts-plantilla-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/layouts/plantilla.blade.php">plantilla.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-layouts-plantilla-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/layouts/plantilla.blade.php">plantilla.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-layouts-plantilla-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/layouts/plantilla.blade.php">plantilla.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-auth-profile-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/auth/profile.blade.php">profile.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-auth-profile-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/auth/profile.blade.php">profile.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-auth-profile-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/auth/profile.blade.php">profile.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-auth-profile-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/auth/profile.blade.php">profile.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-auth-profile-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/auth/profile.blade.php">profile.blade.php</abbr></a></li>
+                </ul>
+                                    <h3>Q</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-queue.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/queue.php">queue.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-queue.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/queue.php">queue.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-queue.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/queue.php">queue.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-queue.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/queue.php">queue.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-queue.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/queue.php">queue.php</abbr></a></li>
+                </ul>
+                                    <h3>R</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-middleware-redirectifauthenticated.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Middleware/RedirectIfAuthenticated.php">RedirectIfAuthenticated.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-middleware-redirectifauthenticated.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Middleware/RedirectIfAuthenticated.php">RedirectIfAuthenticated.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-middleware-redirectifauthenticated.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Middleware/RedirectIfAuthenticated.php">RedirectIfAuthenticated.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-middleware-redirectifauthenticated.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Middleware/RedirectIfAuthenticated.php">RedirectIfAuthenticated.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-middleware-redirectifauthenticated.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Middleware/RedirectIfAuthenticated.php">RedirectIfAuthenticated.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-auth-registercontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/Auth/RegisterController.php">RegisterController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-auth-registercontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/Auth/RegisterController.php">RegisterController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-auth-registercontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/Auth/RegisterController.php">RegisterController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-auth-registercontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/Auth/RegisterController.php">RegisterController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-auth-registercontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/Auth/RegisterController.php">RegisterController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-auth-resetpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/Auth/ResetPasswordController.php">ResetPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-auth-resetpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/Auth/ResetPasswordController.php">ResetPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-auth-resetpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/Auth/ResetPasswordController.php">ResetPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-auth-resetpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/Auth/ResetPasswordController.php">ResetPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-auth-resetpasswordcontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/Auth/ResetPasswordController.php">ResetPasswordController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-providers-routeserviceprovider.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Providers/RouteServiceProvider.php">RouteServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-providers-routeserviceprovider.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Providers/RouteServiceProvider.php">RouteServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-providers-routeserviceprovider.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Providers/RouteServiceProvider.php">RouteServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-providers-routeserviceprovider.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Providers/RouteServiceProvider.php">RouteServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-providers-routeserviceprovider.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Providers/RouteServiceProvider.php">RouteServiceProvider.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-auth-register-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/auth/register.blade.php">register.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-auth-register-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/auth/register.blade.php">register.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-auth-register-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/auth/register.blade.php">register.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-auth-register-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/auth/register.blade.php">register.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-auth-register-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/auth/register.blade.php">register.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-admin-request-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/admin/request.blade.php">request.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-admin-request-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/admin/request.blade.php">request.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-admin-request-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/admin/request.blade.php">request.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-admin-request-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/admin/request.blade.php">request.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-admin-request-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/admin/request.blade.php">request.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-auth-passwords-reset-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/auth/passwords/reset.blade.php">reset.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-auth-passwords-reset-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/auth/passwords/reset.blade.php">reset.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-auth-passwords-reset-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/auth/passwords/reset.blade.php">reset.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-auth-passwords-reset-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/auth/passwords/reset.blade.php">reset.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-auth-passwords-reset-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/auth/passwords/reset.blade.php">reset.blade.php</abbr></a></li>
+                </ul>
+                                    <h3>S</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-vendor-pagination-semantic-ui-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/vendor/pagination/semantic-ui.blade.php">semantic-ui.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-vendor-pagination-semantic-ui-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/vendor/pagination/semantic-ui.blade.php">semantic-ui.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-vendor-pagination-semantic-ui-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/vendor/pagination/semantic-ui.blade.php">semantic-ui.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-vendor-pagination-semantic-ui-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/vendor/pagination/semantic-ui.blade.php">semantic-ui.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-vendor-pagination-semantic-ui-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/vendor/pagination/semantic-ui.blade.php">semantic-ui.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-server.html"><abbr title="DWES_MFAV3-master/v5 13-08/server.php">server.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-server.html"><abbr title="DWES_MFAV3-master/v4 11-08/server.php">server.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-server.html"><abbr title="DWES_MFAV3-master/v1 01-07/server.php">server.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-server.html"><abbr title="DWES_MFAV3-master/v2 16-07/server.php">server.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-server.html"><abbr title="DWES_MFAV3-master/v3 04-08/server.php">server.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-services.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/services.php">services.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-services.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/services.php">services.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-services.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/services.php">services.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-services.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/services.php">services.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-services.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/services.php">services.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-session.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/session.php">session.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-session.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/session.php">session.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-session.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/session.php">session.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-session.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/session.php">session.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-session.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/session.php">session.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-vendor-pagination-simple-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/vendor/pagination/simple-bootstrap-4.blade.php">simple-bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-vendor-pagination-simple-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/vendor/pagination/simple-bootstrap-4.blade.php">simple-bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-vendor-pagination-simple-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/vendor/pagination/simple-bootstrap-4.blade.php">simple-bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-vendor-pagination-simple-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/vendor/pagination/simple-bootstrap-4.blade.php">simple-bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-vendor-pagination-simple-bootstrap-4-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/vendor/pagination/simple-bootstrap-4.blade.php">simple-bootstrap-4.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-vendor-pagination-simple-default-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/vendor/pagination/simple-default.blade.php">simple-default.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-vendor-pagination-simple-default-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/vendor/pagination/simple-default.blade.php">simple-default.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-vendor-pagination-simple-default-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/vendor/pagination/simple-default.blade.php">simple-default.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-vendor-pagination-simple-default-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/vendor/pagination/simple-default.blade.php">simple-default.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-vendor-pagination-simple-default-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/vendor/pagination/simple-default.blade.php">simple-default.blade.php</abbr></a></li>
+                </ul>
+                                    <h3>T</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-tests-testcase.html"><abbr title="DWES_MFAV3-master/v4 11-08/tests/TestCase.php">TestCase.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-tests-testcase.html"><abbr title="DWES_MFAV3-master/v1 01-07/tests/TestCase.php">TestCase.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-tests-testcase.html"><abbr title="DWES_MFAV3-master/v3 04-08/tests/TestCase.php">TestCase.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-tests-testcase.html"><abbr title="DWES_MFAV3-master/v5 13-08/tests/TestCase.php">TestCase.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-tests-testcase.html"><abbr title="DWES_MFAV3-master/v2 16-07/tests/TestCase.php">TestCase.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-middleware-trimstrings.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Middleware/TrimStrings.php">TrimStrings.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-middleware-trimstrings.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Middleware/TrimStrings.php">TrimStrings.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-middleware-trimstrings.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Middleware/TrimStrings.php">TrimStrings.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-middleware-trimstrings.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Middleware/TrimStrings.php">TrimStrings.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-middleware-trimstrings.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Middleware/TrimStrings.php">TrimStrings.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-middleware-trustproxies.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Middleware/TrustProxies.php">TrustProxies.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-middleware-trustproxies.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Middleware/TrustProxies.php">TrustProxies.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-middleware-trustproxies.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Middleware/TrustProxies.php">TrustProxies.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-middleware-trustproxies.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Middleware/TrustProxies.php">TrustProxies.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-middleware-trustproxies.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Middleware/TrustProxies.php">TrustProxies.php</abbr></a></li>
+                </ul>
+                                    <h3>U</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-models-user.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Models/User.php">User.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-models-user.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Models/User.php">User.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-models-user.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Models/User.php">User.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-models-user.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Models/User.php">User.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-models-user.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Models/User.php">User.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-usercontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/UserController.php">UserController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-usercontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/UserController.php">UserController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-usercontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/UserController.php">UserController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-usercontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/UserController.php">UserController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-usercontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/UserController.php">UserController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-database-factories-userfactory.html"><abbr title="DWES_MFAV3-master/v1 01-07/database/factories/UserFactory.php">UserFactory.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-database-factories-userfactory.html"><abbr title="DWES_MFAV3-master/v3 04-08/database/factories/UserFactory.php">UserFactory.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-database-factories-userfactory.html"><abbr title="DWES_MFAV3-master/v4 11-08/database/factories/UserFactory.php">UserFactory.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-database-factories-userfactory.html"><abbr title="DWES_MFAV3-master/v5 13-08/database/factories/UserFactory.php">UserFactory.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-database-factories-userfactory.html"><abbr title="DWES_MFAV3-master/v2 16-07/database/factories/UserFactory.php">UserFactory.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-database-seeds-usertableseeder.html"><abbr title="DWES_MFAV3-master/v1 01-07/database/seeds/UserTableSeeder.php">UserTableSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-database-seeds-usertableseeder.html"><abbr title="DWES_MFAV3-master/v3 04-08/database/seeds/UserTableSeeder.php">UserTableSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-database-seeds-usertableseeder.html"><abbr title="DWES_MFAV3-master/v2 16-07/database/seeds/UserTableSeeder.php">UserTableSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-database-seeds-usertableseeder.html"><abbr title="DWES_MFAV3-master/v5 13-08/database/seeds/UserTableSeeder.php">UserTableSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-database-seeds-usertableseeder.html"><abbr title="DWES_MFAV3-master/v4 11-08/database/seeds/UserTableSeeder.php">UserTableSeeder.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-admin-userinfo-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/admin/userInfo.blade.php">userInfo.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-admin-userinfo-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/admin/userInfo.blade.php">userInfo.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-admin-userinfo-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/admin/userInfo.blade.php">userInfo.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-admin-userinfo-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/admin/userInfo.blade.php">userInfo.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-admin-users-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/admin/users.blade.php">users.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-admin-users-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/admin/users.blade.php">users.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-admin-users-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/admin/users.blade.php">users.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-admin-users-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/admin/users.blade.php">users.blade.php</abbr></a></li>
+                </ul>
+                                    <h3>V</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-controllers-auth-verificationcontroller.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Controllers/Auth/VerificationController.php">VerificationController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-controllers-auth-verificationcontroller.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Controllers/Auth/VerificationController.php">VerificationController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-controllers-auth-verificationcontroller.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Controllers/Auth/VerificationController.php">VerificationController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-controllers-auth-verificationcontroller.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Controllers/Auth/VerificationController.php">VerificationController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-controllers-auth-verificationcontroller.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Controllers/Auth/VerificationController.php">VerificationController.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-app-http-middleware-verifycsrftoken.html"><abbr title="DWES_MFAV3-master/v1 01-07/app/Http/Middleware/VerifyCsrfToken.php">VerifyCsrfToken.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-app-http-middleware-verifycsrftoken.html"><abbr title="DWES_MFAV3-master/v5 13-08/app/Http/Middleware/VerifyCsrfToken.php">VerifyCsrfToken.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-app-http-middleware-verifycsrftoken.html"><abbr title="DWES_MFAV3-master/v2 16-07/app/Http/Middleware/VerifyCsrfToken.php">VerifyCsrfToken.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-app-http-middleware-verifycsrftoken.html"><abbr title="DWES_MFAV3-master/v3 04-08/app/Http/Middleware/VerifyCsrfToken.php">VerifyCsrfToken.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-app-http-middleware-verifycsrftoken.html"><abbr title="DWES_MFAV3-master/v4 11-08/app/Http/Middleware/VerifyCsrfToken.php">VerifyCsrfToken.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-lang-en-validation.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/lang/en/validation.php">validation.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-lang-en-validation.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/lang/en/validation.php">validation.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-lang-en-validation.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/lang/en/validation.php">validation.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-lang-en-validation.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/lang/en/validation.php">validation.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-lang-en-validation.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/lang/en/validation.php">validation.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-auth-verify-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/auth/verify.blade.php">verify.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-auth-verify-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/auth/verify.blade.php">verify.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-auth-verify-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/auth/verify.blade.php">verify.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-auth-verify-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/auth/verify.blade.php">verify.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-auth-verify-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/auth/verify.blade.php">verify.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-dog-view-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/dog/view.blade.php">view.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-dog-view-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/dog/view.blade.php">view.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-dog-view-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/dog/view.blade.php">view.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-dog-view-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/dog/view.blade.php">view.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-dog-view-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/dog/view.blade.php">view.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-config-view.html"><abbr title="DWES_MFAV3-master/v2 16-07/config/view.php">view.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-config-view.html"><abbr title="DWES_MFAV3-master/v4 11-08/config/view.php">view.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-config-view.html"><abbr title="DWES_MFAV3-master/v5 13-08/config/view.php">view.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-config-view.html"><abbr title="DWES_MFAV3-master/v1 01-07/config/view.php">view.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-config-view.html"><abbr title="DWES_MFAV3-master/v3 04-08/config/view.php">view.php</abbr></a></li>
+                </ul>
+                                    <h3>W</h3>
+        <ul class="phpdocumentor-list">
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-routes-web.html"><abbr title="DWES_MFAV3-master/v1 01-07/routes/web.php">web.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-routes-web.html"><abbr title="DWES_MFAV3-master/v5 13-08/routes/web.php">web.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-routes-web.html"><abbr title="DWES_MFAV3-master/v2 16-07/routes/web.php">web.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-routes-web.html"><abbr title="DWES_MFAV3-master/v4 11-08/routes/web.php">web.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-routes-web.html"><abbr title="DWES_MFAV3-master/v3 04-08/routes/web.php">web.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v4-11-08-resources-views-welcome-blade.html"><abbr title="DWES_MFAV3-master/v4 11-08/resources/views/welcome.blade.php">welcome.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v5-13-08-resources-views-welcome-blade.html"><abbr title="DWES_MFAV3-master/v5 13-08/resources/views/welcome.blade.php">welcome.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v3-04-08-resources-views-welcome-blade.html"><abbr title="DWES_MFAV3-master/v3 04-08/resources/views/welcome.blade.php">welcome.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v2-16-07-resources-views-welcome-blade.html"><abbr title="DWES_MFAV3-master/v2 16-07/resources/views/welcome.blade.php">welcome.blade.php</abbr></a></li>
+                    <li><a href="files/dwes-mfav3-master-v1-01-07-resources-views-welcome-blade.html"><abbr title="DWES_MFAV3-master/v1 01-07/resources/views/welcome.blade.php">welcome.blade.php</abbr></a></li>
+                </ul>
+                                                                                        <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="indices/files.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>
