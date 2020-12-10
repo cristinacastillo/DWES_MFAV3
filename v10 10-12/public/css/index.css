@@ -1,0 +1,57 @@
+/*.o {
+    background-color: rgba(162, 242, 233, 0.3);
+}
+
+.c {
+    background-color: rgba(88, 245, 164, 0.3);
+}
+
+.g {
+    background-color: rgba(5,50,103,0.1);
+
+}
+
+*/
+
+.o,
+.c,
+.g,
+.video,
+.form {
+    /*border: 0.1px solid lightgrey;*/
+    border-radius: 10px;
+}
+
+.form {
+    padding-top: 2vw;
+}
+
+.mypd {
+    font-family: 'Anton', sans-serif;
+    /*font-family: 'Sriracha', cursive;
+	font-weight: bold;*/
+}
+
+.lists ul {
+    padding-left: 20%;
+}
+
+.listg ul {
+    padding-left: 15%;
+}
+
+.carrusel {
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .g {
+        padding: vw;
+        margin: 2vw;
+    }
+    .listg ul,
+    .lists ul {
+        padding-left: 0;
+    }
+    
+}
