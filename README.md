@@ -11,11 +11,15 @@ Link a la aplicación desplegada: https://www.mifielamigo.online/
 # Como usar la aplicación desde local:
 
 - Descargar el la ultima versión del proyecto
+- Importar el script de la base de datos
 - Ejecutar los siguientes comandos:
+
     ```sh
     $ composer install
     $ npm install 
+    $ php artisan db:seed
     ```
+Después instalar composer, las dependencias de node y poblar la base de datos, la aplicación estará lista para usar.
 
 # Descripción de usuarios:
 
