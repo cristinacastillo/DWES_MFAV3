@@ -8,6 +8,15 @@ Mi Fiel Amigo es una aplicación web basada en una protectora de animales, perro
 
 Link a la aplicación desplegada: https://www.mifielamigo.online/
 
+# Como usar la aplicación desde local:
+
+- Descargar el la ultima versión del proyecto
+- Ejecutar los siguientes comandos:
+    ```sh
+    $ composer install
+    $ npm install 
+    ```
+
 # Descripción de usuarios:
 
 - Usuarios no registrados:
