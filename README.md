@@ -7,6 +7,7 @@
 Mi Fiel Amigo es una aplicación web basada en una protectora de animales, perros en este caso. En ella se podrá ver incformación sobre la protectora y adoptar perros. Según el usuario que sea tendrá distintas funcionalidades
 
 Link a la aplicación desplegada: https://www.mifielamigo.online/
+Link al video: https://www.youtube.com/playlist?list=PL7E2OScLSMfZrwOvoq-NJydWaNzdeh4Zn
 
 # Como usar la aplicación desde local:
 
